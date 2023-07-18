@@ -49,7 +49,7 @@ ReactDOM.render(
 );*/
 
 //Using arrow functions as its only property is to return 
-const Box=()=>{
+/*const Box=()=>{
     return (
         <div className="box">
             <h1 id='abc'>This is a heading</h1>
@@ -72,4 +72,30 @@ const App=()=>{
     ReactDOM.render(
         <App />,
         document.getElementById('react-container')
-    );
+    );*/
+
+    //Using Props
+    const Box=(props)=>{
+        return (
+            <div className="box">
+                <h1 id='abc'>{props.heading}</h1>
+                <p>This is a paragraph</p>
+            </div>
+        );
+    };
+    const App=()=>{
+        return(
+            <div className='row'>
+                <div className='col'>
+                    <Box heading='First Heading'/>
+                </div>
+                <div className='col'>
+                    <Box heading='Second Heading'/>
+                </div>
+            </div>
+        );
+    };
+        ReactDOM.render(
+            <App />,
+            document.getElementById('react-container')
+        );
