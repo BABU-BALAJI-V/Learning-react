@@ -1,4 +1,5 @@
-const heading = React.createElement(
+//React and React DOM
+/*const heading = React.createElement(
     'h1',
     { id:'abc' },
     'This is a heading.'
@@ -18,6 +19,14 @@ const box=React.createElement(
     {className:'box'},
     heading,
     paragraph
+);*/
+//JSX
+const box=
+(
+    <div className="box">
+    <h1 id='abc'>This is a heading</h1>
+    <p>This is a paragraph</p>
+</div>
 );
 ReactDOM.render(
     box,
