@@ -1,6 +1,25 @@
 .row{
     display: flex;
+    flex-wrap: wrap;
     }
 .col{
-    width: 50%;
+flex-basis: 50%;
+}
+.box{
+    padding: 10%;
+}
+button{
+    margin:8px;
+}
+.red{
+    color: red;
+}
+.yellow{
+    color: yellow;
+}
+.green{
+    color:green
+}
+.blue{
+    color: blue;
 }
