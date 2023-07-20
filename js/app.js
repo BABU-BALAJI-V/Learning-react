@@ -101,7 +101,7 @@ const App=()=>{
         );*/
 
 //Class component and states
-/*class Box extends React.Component{
+class Box extends React.Component{
     state={
         color:"black"
     };
@@ -145,4 +145,4 @@ const App=()=>{
     ReactDOM.render(
         <App />,
         document.getElementById('react-container')
-    );*/
+    );
